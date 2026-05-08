@@ -1,0 +1,2110 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="no-js">
+<head>
+<link href="/Content/responsive/RFE/fa-IR/RFE-fa-IR.css?&amp;av=0.0.0.0&amp;cb=382" rel="stylesheet"/>
+<script src="https://tags.radiofarda.com/rferl-pangea/prod/utag.sync.js"></script>
+<link rel="manifest" href="/manifest.json">
+<script type="text/javascript">
+//a general 'js' detection, must be on top level in <head>, due to CSS performance
+document.documentElement.className = "js";
+var cacheBuster = "382";
+var appBaseUrl = "/";
+var imgEnhancerBreakpoints = [0, 144, 256, 408, 650, 1023, 1597];
+var isLoggingEnabled = false;
+var isPreviewPage = false;
+var isLivePreviewPage = false;
+if (!isPreviewPage) {
+window.RFE = window.RFE || {};
+window.RFE.cacheEnabledByParam = window.location.href.indexOf('nocache=1') === -1;
+const url = new URL(window.location.href);
+const params = new URLSearchParams(url.search);
+// Remove the 'nocache' parameter
+params.delete('nocache');
+// Update the URL without the 'nocache' parameter
+url.search = params.toString();
+window.history.replaceState(null, '', url.toString());
+} else {
+window.addEventListener('load', function() {
+const links = window.document.links;
+for (let i = 0; i < links.length; i++) {
+links[i].href = '#';
+links[i].target = '_self';
+}
+})
+}
+// Iframe & Embed detection
+var embedProperties = {};
+try {
+// Reliable way to check if we are in an iframe.
+var isIframe = window.self !== window.top;
+embedProperties.is_iframe = isIframe;
+if (!isIframe) {
+embedProperties.embed_context = "main";
+} else {
+// We are in an iframe. Let's try to access the parent.
+// This access will only fail with strict cross-origin (without document.domain).
+var parentLocation = window.top.location;
+// The access succeeded. Now we explicitly compare the hostname.
+if (window.location.hostname === parentLocation.hostname) {
+embedProperties.embed_context = "embed_self";
+} else {
+// Hostname is different (e.g. different subdomain with document.domain)
+embedProperties.embed_context = "embed_cross";
+}
+// Since the access works, we can safely get the details.
+embedProperties.url_parent = parentLocation.href;
+embedProperties.title_parent = window.top.document.title;
+}
+} catch (err) {
+// We are in an iframe, and an error occurred, probably due to cross-origin restrictions.
+embedProperties.is_iframe = true;
+embedProperties.embed_context = "embed_cross";
+// We cannot access the properties of window.top.
+// `document.referrer` can sometimes provide the URL of the parent page.
+// It is not 100% reliable, but it is the best we can do in this situation.
+embedProperties.url_parent = document.referrer || null;
+embedProperties.title_parent = null; // We can't get to the title in a cross-origin scenario.
+}
+var pwaEnabled = false;
+var swCacheDisabled;
+</script>
+<meta charset="utf-8" />
+<title>رادیو فردا</title>
+<meta name="description" content="صفحه اصلی وب‌سایت رادیو فردا، بخش فارسی رادیو اروپا آزاد/رادیو آزادی. این رسانه خبری در سال ۱۳۸۲ راه‌اندازی شده و در طول شبانه‌روز از طریق امواج کوتاه و کانال ماهواره‌ای برنامه پخش می‌کند. راديو فردا و وب‌سايت آن، اخبار و گزارش‌های بی‌طرفانه را با هدف گردش آزاد اطلاعات ارائه می‌کنند." />
+<meta name="keywords" content="رادیو فردا، ایران، سیاست، اقتصاد، فرهنگ، روابط بین‌الملل، سیاست خارجی، خاورمیانه، جهان، اجتماع، جامعه، تاریخ، ورزش، دانش، فن‌آوری، محیط زیست، استان‌ها، تهران، دولت، جمهوری اسلامی، پرونده هسته‌ای، حقوق بشر، مهم‌ترین خبرهای ایران و جهان،" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="max-image-preview:large"><meta property="fb:pages" content="83359068840" />
+<link href="https://www.radiofarda.com/" rel="canonical" />
+<meta name="apple-mobile-web-app-title" content="رادیو فردا" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-itunes-app" content="app-id=483099983" />
+<meta content="article" property="og:type" />
+<meta content="رادیو فردا" property="og:title" />
+<meta content="صفحه اصلی وب‌سایت رادیو فردا، بخش فارسی رادیو اروپا آزاد/رادیو آزادی. این رسانه خبری در سال ۱۳۸۲ راه‌اندازی شده و در طول شبانه‌روز از طریق امواج کوتاه و کانال ماهواره‌ای برنامه پخش می‌کند. راديو فردا و وب‌سايت آن، اخبار و گزارش‌های بی‌طرفانه را با هدف گردش آزاد اطلاعات ارائه می‌کنند." property="og:description" />
+<meta content="https://www.radiofarda.com/Content/responsive/RFE/fa-IR/img/top_logo_news.png" property="og:image" />
+<meta content="1200" property="og:image:width" />
+<meta content="675" property="og:image:height" />
+<meta content="site logo" property="og:image:alt" />
+<meta content="https://www.radiofarda.com/" property="og:url" />
+<meta content="رادیو فردا" property="og:site_name" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@RadioFarda_" />
+<meta name="google-site-verification" content="HfR3GPtL4N74UscmAln1W97Zq0H8i4bWgOaY8RfyQzY" />
+<script type="application/ld+json">{"isAccessibleForFree":true,"headline":"رادیو فردا","inLanguage":"fa-IR","keywords":"رادیو فردا، ایران، سیاست، اقتصاد، فرهنگ، روابط بین‌الملل، سیاست خارجی، خاورمیانه، جهان، اجتماع، جامعه، تاریخ، ورزش، دانش، فن‌آوری، محیط زیست، استان‌ها، تهران، دولت، جمهوری اسلامی، پرونده هسته‌ای، حقوق بشر، مهم‌ترین خبرهای ایران و جهان،","datePublished":"2026-05-08 18:01:00Z","dateModified":"2026-05-08 18:01:00Z","publisher":{"logo":{"width":512,"height":220,"@type":"ImageObject","url":"https://www.radiofarda.com/Content/responsive/RFE/fa-IR/img/logo.png"},"@type":"Organization","url":"https://www.radiofarda.com","sameAs":["https://www.facebook.com/radio.farda","https://telegram.me/radiofarda","https://twitter.com/radiofarda_","https://www.youtube.com/user/TheRadiofarda","https://soundcloud.com/radio-farda","https://instagram.com/radiofarda/","https://www.threads.net/@radiofarda"],"name":"رادیو فردا","alternateName":""},"@context":"https://schema.org","@type":"WebSite","mainEntityOfPage":"https://www.radiofarda.com/","url":"https://www.radiofarda.com/","description":"صفحه اصلی وب‌سایت رادیو فردا، بخش فارسی رادیو اروپا آزاد/رادیو آزادی. این رسانه خبری در سال ۱۳۸۲ راه‌اندازی شده و در طول شبانه‌روز از طریق امواج کوتاه و کانال ماهواره‌ای برنامه پخش می‌کند. راديو فردا و وب‌سايت آن، اخبار و گزارش‌های بی‌طرفانه را با هدف گردش آزاد اطلاعات ارائه می‌کنند.","name":"صفحه اصلی","potentialAction":{"target":"https://www.radiofarda.com/s?k={search_term_string}","query-input":"required name=search_term_string","@type":"SearchAction"}}</script>
+<script src="/Scripts/responsive/infographics.b?v=dVbZ-Cza7s4UoO3BqYSZdbxQZVF4BOLP5EfYDs4kqEo1&amp;av=0.0.0.0&amp;cb=382"></script>
+<script src="/Scripts/responsive/loader.b?v=-DFswp_EC2uZw3Oxn_v-cVTLINi_j28CeKgxsXcFnDw1?&amp;av=0.0.0.0&amp;cb=382"></script>
+<link rel="icon" type="image/svg+xml" href="/Content/responsive/RFE/img/webApp/favicon.svg" />
+<link rel="alternate icon" href="/Content/responsive/RFE/img/webApp/favicon.ico" />
+<link rel="mask-icon" color="#ea6903" href="/Content/responsive/RFE/img/webApp/favicon_safari.svg" />
+<link rel="apple-touch-icon" sizes="152x152" href="/Content/responsive/RFE/img/webApp/ico-152x152.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/Content/responsive/RFE/img/webApp/ico-144x144.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/Content/responsive/RFE/img/webApp/ico-114x114.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/Content/responsive/RFE/img/webApp/ico-72x72.png" />
+<link rel="apple-touch-icon-precomposed" href="/Content/responsive/RFE/img/webApp/ico-57x57.png" />
+<link rel="icon" sizes="192x192" href="/Content/responsive/RFE/img/webApp/ico-192x192.png" />
+<link rel="icon" sizes="128x128" href="/Content/responsive/RFE/img/webApp/ico-128x128.png" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/Content/responsive/RFE/img/webApp/ico-144x144.png" />
+<link rel="preload" href="/Content/responsive/fonts/Vazirmatn-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+<link rel="alternate" type="application/rss+xml" title="RFE/RL - Top Stories [RSS]" href="/api/" />
+<link rel="sitemap" type="application/rss+xml" href="/sitemap.xml" />
+<script type="text/javascript">
+var analyticsData = Object.assign(embedProperties, {url:"https://www.radiofarda.com",property_id:"415",page_title:"صفحه اصلی",page_type:"homepage",content_type:"index",subcontent_type:"homepage",last_modified:"2026-05-08 18:01:00Z",pub_datetime:"1900-01-01 00:00:00Z",section:"صفحه اصلی",english_section:"homepage",domain:"www.radiofarda.com",language:"Persian",language_service:"Radio Farda Arabic",platform:"web",copied:"no",copied_article:"",copied_title:"",runs_js:"Yes",cms_release:"8.46.0.0.382",enviro_type:"prod",slug:"homepage",entity:"RFE",short_language_service:"FAR",platform_short:"W",page_name:"صفحه اصلی"});
+// Push Analytics data as GTM message (without "event" attribute and before GTM initialization)
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(analyticsData);
+</script>
+<script type="text/javascript" data-cookiecategory="analytics">
+var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+var renderGtm = "true";
+if (renderGtm === "true") {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WXZBPZ');
+}
+</script>
+</head>
+<body class=" nav-no-loaded cc_theme pg-section pg-home nojs-images date-time-enabled">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXZBPZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script type="text/javascript" data-cookiecategory="analytics">
+var gtmEventObject = {event: 'page_meta_ready'};window.dataLayer = window.dataLayer || [];window.dataLayer.push(gtmEventObject);
+var renderGtm = "true";
+if (renderGtm === "true") {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WXZBPZ');
+}
+</script>
+<!--Analytics tag js version start-->
+<script type="text/javascript" data-cookiecategory="analytics">
+var utag_data = Object.assign({}, analyticsData, {pub_year:"1900",pub_month:"01",pub_day:"01",pub_hour:"00",pub_weekday:"Monday"});
+if(typeof(TealiumTagFrom)==='function' && typeof(TealiumTagSearchKeyword)==='function') {
+var utag_from=TealiumTagFrom();var utag_searchKeyword=TealiumTagSearchKeyword();
+if(utag_searchKeyword!=null && utag_searchKeyword!=='' && utag_data["search_keyword"]==null) utag_data["search_keyword"]=utag_searchKeyword;if(utag_from!=null && utag_from!=='') utag_data["from"]=TealiumTagFrom();}
+if(window.top!== window.self&&utag_data.page_type==="snippet"){utag_data.page_type = 'iframe';}
+try{if(window.top!==window.self&&window.self.location.hostname===window.top.location.hostname){utag_data.platform = 'self-embed';utag_data.platform_short = 'se';}}catch(e){if(window.top!==window.self&&window.self.location.search.includes("platformType=self-embed")){utag_data.platform = 'cross-promo';utag_data.platform_short = 'cp';}}
+(function(a,b,c,d){ a="https://tags.radiofarda.com/rferl-pangea/prod/utag.js"; b=document;c="script";d=b.createElement(c);d.src=a;d.type="text/java"+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a); })();
+</script>
+<!--Analytics tag js version end-->
+<!-- Analytics tag management NoScript -->
+<noscript>
+<img style="position: absolute; border: none;" src="https://ssc.radiofarda.com/b/ss/bbgprod,bbgentityrferl/1/G.4--NS/1746506837?pageName=rfe%3afar%3aw%3ahomepage%3a%d8%b5%d9%81%d8%ad%d9%87%20%d8%a7%d8%b5%d9%84%db%8c&amp;c6=%d8%b5%d9%81%d8%ad%d9%87%20%d8%a7%d8%b5%d9%84%db%8c&amp;v36=8.46.0.0.382&amp;v6=D=c6&amp;g=https%3a%2f%2fwww.radiofarda.com&amp;c1=D=g&amp;v1=D=g&amp;events=event1&amp;c16=radio%20farda%20arabic&amp;v16=D=c16&amp;c5=homepage&amp;v5=D=c5&amp;ch=%d8%b5%d9%81%d8%ad%d9%87%20%d8%a7%d8%b5%d9%84%db%8c&amp;c15=persian&amp;v15=D=c15&amp;c4=index&amp;v4=D=c4&amp;v20=no&amp;c17=web&amp;v17=D=c17&amp;mcorgid=518abc7455e462b97f000101%40adobeorg&amp;server=www.radiofarda.com&amp;pageType=D=c4&amp;ns=bbg&amp;v29=D=server&amp;v25=rfe&amp;v30=415&amp;v105=D=User-Agent " alt="analytics" width="1" height="1" /></noscript>
+<!-- End of Analytics tag management NoScript -->
+<!--*** Accessibility links - For ScreenReaders only ***-->
+<section>
+<div class="sr-only">
+<h2>لینک‌های قابلیت دسترسی</h2>
+<ul>
+<li><a href="#content" data-disable-smooth-scroll="1">بازگشت</a></li>
+<li><a href="#navigation" data-disable-smooth-scroll="1">بازگشت به منوی اصلی</a></li>
+<li><a href="#txtHeaderSearch" data-disable-smooth-scroll="1">رفتن به صفحه جستجو</a></li>
+</ul>
+</div>
+</section>
+<div dir="rtl">
+<div id="page">
+<aside>
+<div class="ctc-message pos-fix">
+<div class="ctc-message__inner">لینک در حافظه موقت دستگاه ذخیره شده است</div>
+</div>
+</aside>
+<div class="hdr-20 hdr-20--big">
+<div class="hdr-20__inner">
+<div class="hdr-20__max pos-rel">
+<div class="hdr-20__side hdr-20__side--primary d-flex">
+<label data-for="main-menu-ctrl" data-switcher-trigger="true" data-switch-target="main-menu-ctrl" class="burger hdr-trigger pos-rel trans-trigger" data-trans-evt="click" data-trans-id="menu">
+<span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close burger__ico burger__ico--close"></span>
+<span class="ico ico-menu hdr-trigger__ico hdr-trigger__ico--open burger__ico burger__ico--open"></span>
+<span class="burger__label">زیربخش‌ها</span>
+</label>
+<div class="menu-pnl pos-fix trans-target" data-switch-target="main-menu-ctrl" data-trans-id="menu">
+<div class="menu-pnl__inner">
+<nav class="main-nav menu-pnl__item menu-pnl__item--first">
+<ul class="main-nav__list accordeon" data-analytics-tales="false" data-promo-name="link" data-location-name="nav,secnav">
+<li class="main-nav__item">
+<a class="main-nav__item-name main-nav__item-name--link" href="/p/2831.html" title="صفحه اصلی" data-item-name="homepage" >صفحه اصلی</a>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-name main-nav__item-name--link" href="/iran" title="ایران" data-item-name="iran-news" >ایران</a>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-name main-nav__item-name--link" href="/world" title="جهان" data-item-name="world" >جهان</a>
+</li>
+<li class="main-nav__item accordeon__item" data-switch-target="menu-item-2999">
+<label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-2999">
+رادیو
+<span class="ico ico-chevron-down main-nav__chev"></span>
+</label>
+<div class="main-nav__sub-list">
+<a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/schedule/radio.html#live-now" title="انتخاب کنید و بشنوید" >انتخاب کنید و بشنوید</a>
+<a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/radio-programs" title="برنامه‌های رادیویی" data-item-name="radio_programs" >برنامه‌های رادیویی</a>
+<a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/radio/digitalaudio" title="فرکانس‌ها" >فرکانس‌ها</a>
+</div>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-name main-nav__item-name--link" href="/farda-podcasts" title="پادکست" data-item-name="podcasts" >پادکست</a>
+</li>
+<li class="main-nav__item accordeon__item" data-switch-target="menu-item-670">
+<label class="main-nav__item-name main-nav__item-name--label accordeon__control-label" data-switcher-trigger="true" data-for="menu-item-670">
+چندرسانه‌ای
+<span class="ico ico-chevron-down main-nav__chev"></span>
+</label>
+<div class="main-nav__sub-list">
+<a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/photogalleries" title="گزارش‌های تصویری" data-item-name="photogallery" >گزارش‌های تصویری</a>
+<a class="main-nav__item-name main-nav__item-name--link main-nav__item-name--sub" href="/video-reports" title="گزارش‌های ویدئویی" data-item-name="multimedia_video" >گزارش‌های ویدئویی</a>
+</div>
+</li>
+<li class="main-nav__item">
+<a class="main-nav__item-name main-nav__item-name--link" href="/tell-me" title="زنان فردا" data-item-name="Tell me" >زنان فردا</a>
+</li>
+</ul>
+</nav>
+<div class="menu-pnl__item">
+<a href="https://en.radiofarda.com" class="menu-pnl__item-link" alt="English">English</a>
+</div>
+<div class="menu-pnl__item menu-pnl__item--social">
+<h5 class="menu-pnl__sub-head">به ما بپیوندید</h5>
+<a href="https://www.facebook.com/radio.farda" title="در فیس‌بوک به ما بپیوندید" data-analytics-text="follow_on_facebook" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-facebook" target="_blank" rel="noopener">
+<span class="ico ico-facebook-alt ico--rounded"></span>
+</a>
+<a href="https://telegram.me/radiofarda" title="در تلگرام به ما بپیوندید" data-analytics-text="follow_on_telegram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-telegram" target="_blank" rel="noopener">
+<span class="ico ico-telegram ico--rounded"></span>
+</a>
+<a href="https://twitter.com/radiofarda_" title="در ایکس به ما بپیوندید" data-analytics-text="follow_on_twitter" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-twitter" target="_blank" rel="noopener">
+<span class="ico ico-twitter ico--rounded"></span>
+</a>
+<a href="https://www.youtube.com/user/TheRadiofarda" title="در یوتیوب ما را دنبال کنید" data-analytics-text="follow_on_youtube" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-youtube" target="_blank" rel="noopener">
+<span class="ico ico-youtube ico--rounded"></span>
+</a>
+<a href="https://soundcloud.com/radio-farda" title="در ساوندکلاود دنبال کنید" data-analytics-text="follow_on_soundcloud" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-soundcloud" target="_blank" rel="noopener">
+<span class="ico ico-soundcloud ico--rounded"></span>
+</a>
+<a href="https://instagram.com/radiofarda/" title="در اینستاگرام دنبال کنید" data-analytics-text="follow_on_instagram" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-instagram" target="_blank" rel="noopener">
+<span class="ico ico-instagram ico--rounded"></span>
+</a>
+<a href="https://www.threads.net/@radiofarda" title="در تردز به ما بپیوندید" data-analytics-text="follow_on_threads" class="btn btn--rounded btn--social-inverted menu-pnl__btn js-social-btn btn-threads" target="_blank" rel="noopener">
+<span class="ico ico-threads ico--rounded"></span>
+</a>
+</div>
+<div class="menu-pnl__item">
+<a href="/navigation/allsites" class="menu-pnl__item-link">
+<span class="ico ico-languages "></span>
+زبان‌های دیگر
+</a>
+</div>
+</div>
+</div>
+<label data-for="top-search-ctrl" data-switcher-trigger="true" data-switch-target="top-search-ctrl" class="top-srch-trigger hdr-trigger">
+<span class="ico ico-close hdr-trigger__ico hdr-trigger__ico--close top-srch-trigger__ico top-srch-trigger__ico--close"></span>
+<span class="ico ico-search hdr-trigger__ico hdr-trigger__ico--open top-srch-trigger__ico top-srch-trigger__ico--open"></span>
+</label>
+<div class="srch-top srch-top--in-header" data-switch-target="top-search-ctrl">
+<div class="container">
+<form action="/s" class="srch-top__form srch-top__form--in-header" id="form-topSearchHeader" method="get" role="search"><label for="txtHeaderSearch" class="sr-only">جستجو</label>
+<input type="text" id="txtHeaderSearch" name="k" placeholder=" جستجو ..." accesskey="s" value="" class="srch-top__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) }" />
+<button title="جستجو" type="submit" class="btn btn--top-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtHeaderSearch')[0].value) ">
+<span class="ico ico-search"></span>
+</button></form>
+</div>
+</div>
+<a href="/" class="main-logo-link">
+<img src="/Content/responsive/RFE/fa-IR/img/logo-compact.svg?cb=382" class="main-logo main-logo--comp" alt="site logo">
+<img src="/Content/responsive/RFE/fa-IR/img/logo.svg?cb=382" class="main-logo main-logo--big" alt="site logo">
+</a>
+</div>
+<div class="hdr-20__side hdr-20__side--secondary d-flex">
+<a href="/p/3021.html" title="پادکست" class="hdr-20__secondary-item" data-item-name="podcast">
+<span class="ico ico-podcast hdr-20__secondary-icon"></span>
+</a>
+<a href="/s" title="جستجو" class="hdr-20__secondary-item hdr-20__secondary-item--search" data-item-name="search">
+<span class="ico ico-search hdr-20__secondary-icon hdr-20__secondary-icon--search"></span>
+</a>
+<div class="hdr-20__secondary-item live-b-drop">
+<div class="live-b-drop__off">
+<a href="/live" class="live-b-drop__link" title="زنده" data-item-name="live">
+<span class="badge badge--live-btn badge--live">
+زنده
+</span>
+</a>
+</div>
+<div class="live-b-drop__on hidden">
+<label data-for="live-ctrl" data-switcher-trigger="true" data-switch-target="live-ctrl" class="live-b-drop__label pos-rel">
+<span class="badge badge--live badge--live-btn">
+زنده
+</span>
+<span class="ico ico-close live-b-drop__label-ico live-b-drop__label-ico--close"></span>
+</label>
+<div class="live-b-drop__panel" id="targetLivePanelDiv" data-switch-target="live-ctrl"></div>
+</div>
+</div>
+<div class="srch-bottom">
+<form action="/s" class="srch-bottom__form d-flex" id="form-bottomSearch" method="get" role="search"><label for="txtSearch" class="sr-only">جستجو</label>
+<input type="search" id="txtSearch" name="k" placeholder=" جستجو ..." accesskey="s" value="" class="srch-bottom__input analyticstag-event" onkeydown="if (event.keyCode === 13) { FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) }" />
+<button title="جستجو" type="submit" class="btn btn--bottom-srch analyticstag-event" onclick="FireAnalyticsTagEventOnSearch('search', $dom.get('#txtSearch')[0].value) ">
+<span class="ico ico-search"></span>
+</button></form>
+</div>
+</div>
+<img src="/Content/responsive/RFE/fa-IR/img/logo-print.gif?cb=382" class="logo-print" loading="lazy" alt="site logo">
+<img src="/Content/responsive/RFE/fa-IR/img/logo-print_color.png?cb=382" class="logo-print logo-print--color" loading="lazy" alt="site logo">
+</div>
+</div>
+</div>
+<script>
+if (document.body.className.indexOf('pg-home') > -1) {
+var nav2In = document.querySelector('.hdr-20__inner');
+var nav2Sec = document.querySelector('.hdr-20__side--secondary');
+var secStyle = window.getComputedStyle(nav2Sec);
+if (nav2In && window.pageYOffset < 150 && secStyle['position'] !== 'fixed') {
+nav2In.classList.add('hdr-20__inner--big')
+}
+}
+</script>
+<div class="c-hlights c-hlights--breaking c-hlights--no-item" data-hlight-display="mobile,desktop">
+<div class="c-hlights__wrap container p-0">
+<div class="c-hlights__nav">
+<a role="button" href="#" title="قبلی">
+<span class="ico ico-chevron-backward m-0"></span>
+<span class="sr-only">قبلی</span>
+</a>
+<a role="button" href="#" title="بعدی">
+<span class="ico ico-chevron-forward m-0"></span>
+<span class="sr-only">بعدی</span>
+</a>
+</div>
+<span class="c-hlights__label">
+<span class="">خبر فوری</span>
+<span class="switcher-trigger">
+<label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--more p-b-0" title="بیشتر بخوانید">
+<span class="ico ico-chevron-down"></span>
+</label>
+<label data-for="more-less-1" data-switcher-trigger="true" class="switcher-trigger__label switcher-trigger__label--less p-b-0" title="بازگشت">
+<span class="ico ico-chevron-up"></span>
+</label>
+</span>
+</span>
+<ul class="c-hlights__items switcher-target" data-switch-target="more-less-1">
+</ul>
+</div>
+</div> <div class="sub-nav container">
+<div class="sub-nav__inner">
+<a class="sub-nav__link" href="https://www.radiofarda.com/radio-programs" title="برنامه‌های رادیویی" >برنامه‌های رادیویی</a>
+<a class="sub-nav__link" href="/p/11097.html" title="ایران و آمریکا" >ایران و آمریکا</a>
+<a class="sub-nav__link" href="/cafefarda" title="کافه فردا" target="_blank" rel="noopener">کافه فردا</a>
+<a class="sub-nav__link" href="https://www.radiofarda.com/a/28400148.html" title="اپلیکیشن‌ها" >اپلیکیشن‌ها</a>
+</div>
+</div>
+<div class="date-time-area ">
+<div class="container">
+<span class="date-time">
+جمعه ۱۸ اردیبهشت ۱۴۰۵ تهران ۲۱:۳۱
+</span>
+</div>
+</div>
+<div id="content">
+<div class="container" id="wrowblock-15773_135" >
+<div class="row" id="wrowblock-15773_136" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-15773_137" >
+<div class="media-block-wrap" id="wrowblock-15773_140" data-area-id=R1_1>
+<h2 class="section-head">
+خبر اول </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-2c">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/iran-us-war-liveblog/33647192.html" class="img-wrap img-wrap--t-spac img-wrap--size-1" title="&#171;احتمال نشت نفت&#187; در نزدیکی خارگ؛ جلوگیری از جابه‌جایی میلیاردها دلار نفت ایران">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/a9abefcc-02de-4cc4-ad5e-1b4d342e9d5f_cx2_cy3_cw93_w250_r1.jpg" alt="تصویر ماهواره‌ای از نشت احتمالی نفت در اطراف جزیره خارگ" />
+</noscript>
+<img data-src="https://gdb.rferl.org/a9abefcc-02de-4cc4-ad5e-1b4d342e9d5f_cx2_cy3_cw93_w250_r1.jpg" src="" alt="تصویر ماهواره‌ای از نشت احتمالی نفت در اطراف جزیره خارگ" class=""/>
+</div>
+<span class="ico ico-liveblog ico--media-type"></span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-2c">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block media-block--top-story-package package-list--last">
+<div class="media-block__content">
+<a href="/a/iran-us-war-liveblog/33647192.html">
+<h4 class="media-block__title media-block__title--size-1" title="&#171;احتمال نشت نفت&#187; در نزدیکی خارگ؛ جلوگیری از جابه‌جایی میلیاردها دلار نفت ایران">
+<span class="badge badge--live" >زنده</span>
+&#171;احتمال نشت نفت&#187; در نزدیکی خارگ؛ جلوگیری از جابه‌جایی میلیاردها دلار نفت ایران
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="media-block-wrap" id="wrowblock-15773_141" data-area-id=R1_2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/33752472.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/4c53bde4-9e77-4a7a-bede-08379bb638aa_w160_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/4c53bde4-9e77-4a7a-bede-08379bb638aa_w100_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/33752472.html">
+<h4 class="media-block__title media-block__title--size-2" title="گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟">
+گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/us-says-opened-fire-to-disable-two-iran-flagged-ships/33752804.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/950b4d44-be25-41e8-873f-76e96be64aa9_cx0_cy2_cw0_w160_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/950b4d44-be25-41e8-873f-76e96be64aa9_cx0_cy2_cw0_w100_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/us-says-opened-fire-to-disable-two-iran-flagged-ships/33752804.html">
+<h4 class="media-block__title media-block__title--size-2" title="ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است">
+ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-15773_138" >
+<div class="media-block-wrap" id="wrowblock-15773_142" data-area-id=R1_3>
+<h2 class="section-head">
+<a href="/TopNews"><span class="ico ico-chevron-forward pull-right flip"></span>تازه‌ها</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/trump-pentagon-release-secret-ufo-files/33752851.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/95f7fb54-7e76-4170-b5be-e48a9106c387_cx0_cy6_cw0_w160_r1.jpg" alt="یکی از تصاویر منتشر شده توسط وزارت دفاع آمریکا" />
+</noscript>
+<img data-src="https://gdb.rferl.org/95f7fb54-7e76-4170-b5be-e48a9106c387_cx0_cy6_cw0_w100_r1.jpg" src="" alt="یکی از تصاویر منتشر شده توسط وزارت دفاع آمریکا" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/trump-pentagon-release-secret-ufo-files/33752851.html">
+<h4 class="media-block__title media-block__title--size-2" title="دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد">
+دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33752541.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="حزب کارگر در انتخابات محلی بریتانیا با افت حمایت در مقابل حزب راست‌گرا مواجه شد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/1a70bf94-8258-4202-8daa-b43e0e91314f_cx0_cy8_cw0_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/1a70bf94-8258-4202-8daa-b43e0e91314f_cx0_cy8_cw0_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33752541.html">
+<h4 class="media-block__title media-block__title--size-4" title="حزب کارگر در انتخابات محلی بریتانیا با افت حمایت در مقابل حزب راست‌گرا مواجه شد">
+حزب کارگر در انتخابات محلی بریتانیا با افت حمایت در مقابل حزب راست‌گرا مواجه شد
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/iran-narges-mohammadi-still-in-hospital-amnesty-un-fact-finding-mission/33752536.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="همزمان با سکوت قوه قضاییه، درخواست‌ها برای رسیدگی پزشکی و آزادی نرگس محمدی ادامه دارد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-c0a8-0242-ff1a-08dbf89c7c06_w100_r1.jpg" alt="نرگس محمدی دومین زن ایرانی است که جایزه نوبل را از آن خود کرد" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-c0a8-0242-ff1a-08dbf89c7c06_w33_r1.jpg" src="" alt="نرگس محمدی دومین زن ایرانی است که جایزه نوبل را از آن خود کرد" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/iran-narges-mohammadi-still-in-hospital-amnesty-un-fact-finding-mission/33752536.html">
+<h4 class="media-block__title media-block__title--size-4" title="همزمان با سکوت قوه قضاییه، درخواست‌ها برای رسیدگی پزشکی و آزادی نرگس محمدی ادامه دارد">
+همزمان با سکوت قوه قضاییه، درخواست‌ها برای رسیدگی پزشکی و آزادی نرگس محمدی ادامه دارد
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33752467.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/f40d4e68-df41-44ce-a7ac-2714e6436797_w100_r1.jpg" alt="تصویری از ویدئویی که از درگیری در نخستین ساعات بامداد جمعه در تنگه هرمز رخ داد" />
+</noscript>
+<img data-src="https://gdb.rferl.org/f40d4e68-df41-44ce-a7ac-2714e6436797_w33_r1.jpg" src="" alt="تصویری از ویدئویی که از درگیری در نخستین ساعات بامداد جمعه در تنگه هرمز رخ داد" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33752467.html">
+<h4 class="media-block__title media-block__title--size-4" title="حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است">
+حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/who-warns-of-more-hantavirus-cases-in-limited-outbreak/33752123.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/10e3747b-4b3e-472d-b843-fed1fa2e0a54_cx0_cy2_cw0_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/10e3747b-4b3e-472d-b843-fed1fa2e0a54_cx0_cy2_cw0_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/who-warns-of-more-hantavirus-cases-in-limited-outbreak/33752123.html">
+<h4 class="media-block__title media-block__title--size-4" title="سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود">
+سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/us-sanctions-iraq-s-deputy-oil-minister-militias-over-iran-support/33752056.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-0a00-0242-e577-08db3396a3e0_w100_r1.jpg" alt="تصویری از یک میدان نفتی در شهر بصره عراق" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-0a00-0242-e577-08db3396a3e0_w33_r1.jpg" src="" alt="تصویری از یک میدان نفتی در شهر بصره عراق" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/us-sanctions-iraq-s-deputy-oil-minister-militias-over-iran-support/33752056.html">
+<h4 class="media-block__title media-block__title--size-4" title="آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد">
+آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/us-underlines-strong-vatican-ties-after-rubio-meets-pope/33751985.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="دیدار روبیو و پاپ لئو؛ آمریکا می‌گوید رابطه‌اش با واتیکان &#171;قوی&#187; است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/155fd1fb-1274-4ff0-85cc-b6e04b515e94_cx0_cy2_cw0_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/155fd1fb-1274-4ff0-85cc-b6e04b515e94_cx0_cy2_cw0_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/us-underlines-strong-vatican-ties-after-rubio-meets-pope/33751985.html">
+<h4 class="media-block__title media-block__title--size-4" title="دیدار روبیو و پاپ لئو؛ آمریکا می‌گوید رابطه‌اش با واتیکان &#171;قوی&#187; است">
+دیدار روبیو و پاپ لئو؛ آمریکا می‌گوید رابطه‌اش با واتیکان &#171;قوی&#187; است
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-15773_139" >
+<div class="media-block-wrap" id="wrowblock-15773_143" data-area-id=R1_4>
+<h2 class="section-head">
+<a href="/BeyondTheNews"><span class="ico ico-chevron-forward pull-right flip"></span>فراتر از خبر</a> </h2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-grid">
+<div class="media-block ">
+<a href="/a/cost-of-renting-in-iran-after-war/33752104.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/b657c980-f8ab-4530-8153-3bf3c106635e_cx0_cy5_cw0_w160_r1.jpg" alt="یک ساختمان مسکونی ویران‌شده در تهران بر اثر حمله هوایی" />
+</noscript>
+<img data-src="https://gdb.rferl.org/b657c980-f8ab-4530-8153-3bf3c106635e_cx0_cy5_cw0_w100_r1.jpg" src="" alt="یک ساختمان مسکونی ویران‌شده در تهران بر اثر حمله هوایی" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/cost-of-renting-in-iran-after-war/33752104.html">
+<h4 class="media-block__title media-block__title--size-2" title="افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟">
+افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-grid">
+<div class="media-block ">
+<a href="/a/robert-murrett-a-us-vice-admiral-on-the-very-tough-challenge-of-hormuz/33751242.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/59fa9c80-d721-40f3-ae25-8e8416c4a9b1_cx0_cy10_cw0_w160_r1.jpg" alt="دو ناوچه آمریکایی در حال انجام مأموریت‌های دریایی" />
+</noscript>
+<img data-src="https://gdb.rferl.org/59fa9c80-d721-40f3-ae25-8e8416c4a9b1_cx0_cy10_cw0_w100_r1.jpg" src="" alt="دو ناوچه آمریکایی در حال انجام مأموریت‌های دریایی" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/robert-murrett-a-us-vice-admiral-on-the-very-tough-challenge-of-hormuz/33751242.html">
+<h4 class="media-block__title media-block__title--size-2" title="دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است">
+دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-grid">
+<div class="media-block ">
+<a href="/a/33752773.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="رهبری که به یخچال اعتقاد نداشت">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/f9ffef5b-c844-4b07-1eff-08de3bed1b27_w160_r1.jpg" alt="
+" />
+</noscript>
+<img data-src="https://gdb.rferl.org/f9ffef5b-c844-4b07-1eff-08de3bed1b27_w100_r1.jpg" src="" alt="
+" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/33752773.html">
+<h4 class="media-block__title media-block__title--size-2" title="رهبری که به یخچال اعتقاد نداشت">
+رهبری که به یخچال اعتقاد نداشت
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-61616_73" >
+<div class="row" id="wrowblock-61616_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-61616_50" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-58323_74" >
+<div class="row" id="wrowblock-58323_52" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-58323_53" >
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-58323_54" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-61615_73" >
+<div class="row" id="wrowblock-61615_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-61615_50" >
+<div class="media-block-wrap" id="wrowblock-61615_51" data-area-id=R4_1>
+<div class="wsw">
+<div class="clear"></div>
+<div class="wsw__embed">
+<div class="infgraphicsAttach" >
+<script type="text/javascript">
+initInfographics(
+{
+groups:[],
+params:[],
+isMobile:true
+});
+</script>
+<style>
+#GR-2613c {
+background-image: url(https://gdb.rferl.org/a34e07b0-5b92-4627-365d-08de3c92853e_w1280.jpg);
+background-position: right;
+background-color: #1a3948;
+height: 100px;
+position: relative;
+-webkit-box-align: start;
+-ms-flex-align: start;
+-ms-grid-row-align: flex-start;
+align-items: flex-center;
+overflow: hidden;
+text-decoration: none;
+}
+#GR-2613c button {
+position: absolute;
+bottom: 0;
+left: 0;
+font-size: 78%;
+background-color: #ff5400;
+padding: 6px 8px;
+}
+#GR-2613c:before {
+content: "";
+position: absolute;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(
+to left,
+rgba(26, 57, 72, 0.6) 0%,
+rgba(26, 57, 72, 0.6) 100%
+);
+}
+#GR-2613c h5 {
+color: #ffffff;
+font-size: 21px;
+max-width: 65%;
+text-align: center;
+line-height: 110%;
+text-transform: uppercase;
+position: relative;
+}
+.GR-2613c-txt-main {
+display: inline-block;
+}
+@media (min-width: 600px) {
+#GR-2613c {
+height: 150px;
+}
+#GR-2613c button {
+font-size: 90%;
+padding: 8px 10px;
+}
+#GR-2613c h5 {
+font-size: 30px;
+max-width: 68%;
+}
+}
+@media (min-width: 992px) {
+#GR-2613c h5 {
+font-size: 42px;
+}
+#GR-2613c button {
+font-size: 100%;
+padding: 12px 12px;
+}
+}
+</style>
+<link href="https://docs.rferl.org/branding/cdn/html_banners/banners-styles.css" rel="stylesheet">
+<a id="GR-2613c" href="https://www.radiofarda.com/a/iran-victims-protests/33666089.html?int_cid=banner:people-killed-in-irans-protests_gr-2613cb:rferl-farda:full-width" class="banner banner--cover">
+<h5 class="font-2">چهره‌ها پشت آمار<span class="GR-2613c-txt-main">کشته‌شدگان اعتراضات دی ۱۴۰۴ ایران</span></h5>
+<button class="btn font-2">بیشتر بخوانید</button>
+</a>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-61275_73" >
+<div class="row" id="wrowblock-61275_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-61275_50" >
+<div class="media-block-wrap" id="wrowblock-61275_51" data-area-id=R5_1>
+<h2 class="section-head">
+<a href="https://www.radiofarda.com/p/11097.html"><span class="ico ico-chevron-forward pull-right flip"></span>ایران و آمریکا</a> </h2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/us-says-opened-fire-to-disable-two-iran-flagged-ships/33752804.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/950b4d44-be25-41e8-873f-76e96be64aa9_cx0_cy2_cw0_w160_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/950b4d44-be25-41e8-873f-76e96be64aa9_cx0_cy2_cw0_w100_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/us-says-opened-fire-to-disable-two-iran-flagged-ships/33752804.html">
+<h4 class="media-block__title media-block__title--size-2" title="ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است">
+ارتش آمریکا می‌گوید دو نفتکش ایرانی را هدف قرار داده و از کار انداخته است
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/33752472.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/4c53bde4-9e77-4a7a-bede-08379bb638aa_w160_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/4c53bde4-9e77-4a7a-bede-08379bb638aa_w100_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/33752472.html">
+<h4 class="media-block__title media-block__title--size-2" title="گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟">
+گفت‌گو با بری پاول؛ آمریکا در قبال ایران چه راهبردی دارد و گام بعدی چیست؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/33752467.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/f40d4e68-df41-44ce-a7ac-2714e6436797_w160_r1.jpg" alt="تصویری از ویدئویی که از درگیری در نخستین ساعات بامداد جمعه در تنگه هرمز رخ داد" />
+</noscript>
+<img data-src="https://gdb.rferl.org/f40d4e68-df41-44ce-a7ac-2714e6436797_w100_r1.jpg" src="" alt="تصویری از ویدئویی که از درگیری در نخستین ساعات بامداد جمعه در تنگه هرمز رخ داد" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/33752467.html">
+<h4 class="media-block__title media-block__title--size-2" title="حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است">
+حمله آمریکا به &#171;مواضع نظامی&#187; ایران در هرمز؛ ترامپ: آتش‌بس هم‌چنان برقرار است
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/us-sanctions-iraq-s-deputy-oil-minister-militias-over-iran-support/33752056.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-0a00-0242-e577-08db3396a3e0_w160_r1.jpg" alt="تصویری از یک میدان نفتی در شهر بصره عراق" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-0a00-0242-e577-08db3396a3e0_w100_r1.jpg" src="" alt="تصویری از یک میدان نفتی در شهر بصره عراق" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/us-sanctions-iraq-s-deputy-oil-minister-militias-over-iran-support/33752056.html">
+<h4 class="media-block__title media-block__title--size-2" title="آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد">
+آمریکا معاون وزیر نفت عراق و شبه‌نظامیان شیعه را به اتهام کمک به ایران تحریم کرد
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-60306_73" >
+<div class="row" id="wrowblock-60306_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-60306_50" >
+<div class="media-block-wrap" id="wrowblock-60306_51" data-area-id=R6_1>
+<h2 class="section-head">
+<a href="/news-and-reports"><span class="ico ico-chevron-forward pull-right flip"></span>بشنوید</a> </h2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/medicine-shortage-health-care-activist-interview-homa-fathi/33752799.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="چرا کمبود دارو شدت گرفته و چگونه کنشگران به تامین آن کمک می‌کنند؟ گفت‌وگو با هما فتحی">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/c9d8e958-2de7-449b-bc3c-028e0ccadc3c_cx6_cy1_cw92_w160_r1.jpg" alt="A pharmaceutical worker works in a pharmacy in Tehran" />
+</noscript>
+<img data-src="https://gdb.rferl.org/c9d8e958-2de7-449b-bc3c-028e0ccadc3c_cx6_cy1_cw92_w100_r1.jpg" src="" alt="A pharmaceutical worker works in a pharmacy in Tehran" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/medicine-shortage-health-care-activist-interview-homa-fathi/33752799.html">
+<h4 class="media-block__title media-block__title--size-2" title="چرا کمبود دارو شدت گرفته و چگونه کنشگران به تامین آن کمک می‌کنند؟ گفت‌وگو با هما فتحی">
+چرا کمبود دارو شدت گرفته و چگونه کنشگران به تامین آن کمک می‌کنند؟ گفت‌وگو با هما فتحی
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/internal-politics-nabavian-araghchi-negotiations-interview-mojtaba-najafi/33752678.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="مجتبی نجفی: سنت مخالفت با توافق در ایران دیرینه است، اما موثر نیست">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/d9f9454e-b8c7-4ba4-3b2c-08de3be37656_cx0_cy10_cw82_w160_r1.jpg" alt="Mohammad Bagher Ghalibaf, middle, and Abbas Araghchi, left, arrived in Islamabad-- 10 Apr 2026" />
+</noscript>
+<img data-src="https://gdb.rferl.org/d9f9454e-b8c7-4ba4-3b2c-08de3be37656_cx0_cy10_cw82_w100_r1.jpg" src="" alt="Mohammad Bagher Ghalibaf, middle, and Abbas Araghchi, left, arrived in Islamabad-- 10 Apr 2026" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/internal-politics-nabavian-araghchi-negotiations-interview-mojtaba-najafi/33752678.html">
+<h4 class="media-block__title media-block__title--size-2" title="مجتبی نجفی: سنت مخالفت با توافق در ایران دیرینه است، اما موثر نیست">
+مجتبی نجفی: سنت مخالفت با توافق در ایران دیرینه است، اما موثر نیست
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/gcc-countries-vs-iran-interview-with-mehrdad-farahmand/33752670.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="&#171;انشقاقی&#187; که کشورهای عربی را از مواجهه با ایران باز داشت">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/caab0000-0aff-0242-3fde-08d9b58f0651_cx0_cy5_cw100_w160_r1.jpg" alt="A handout picture provided by the Saudi Royal Palace on January 5, 2021, shows from L to R: Kuwaiti Emir Sheikh Nawaf al-Ahmad Al-Sabah, Emir of Qatar Tamim bin Hamad Al-Thani, Omani Deputy Prime Minister Fahd Bin Mahmud, Saudi Crown Prince Mohammed bin S" />
+</noscript>
+<img data-src="https://gdb.rferl.org/caab0000-0aff-0242-3fde-08d9b58f0651_cx0_cy5_cw100_w100_r1.jpg" src="" alt="A handout picture provided by the Saudi Royal Palace on January 5, 2021, shows from L to R: Kuwaiti Emir Sheikh Nawaf al-Ahmad Al-Sabah, Emir of Qatar Tamim bin Hamad Al-Thani, Omani Deputy Prime Minister Fahd Bin Mahmud, Saudi Crown Prince Mohammed bin S" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/gcc-countries-vs-iran-interview-with-mehrdad-farahmand/33752670.html">
+<h4 class="media-block__title media-block__title--size-2" title="&#171;انشقاقی&#187; که کشورهای عربی را از مواجهه با ایران باز داشت">
+&#171;انشقاقی&#187; که کشورهای عربی را از مواجهه با ایران باز داشت
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mb-grid">
+<div class="media-block ">
+<a href="/a/iran-us-close-to-deal-or-new-war-interview-hamidreza-azizi/33751979.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="&#171;تفاهم کلی&#187; ایران و آمریکا؛ فرصت‌ها و چالش‌ها در گفت‌وگو با حمیدرضا عزیزی ">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/c12e1049-3d5d-4a98-073c-08dd82022d88_w160_r1.jpg" alt="USA-IRAN/TALKS" />
+</noscript>
+<img data-src="https://gdb.rferl.org/c12e1049-3d5d-4a98-073c-08dd82022d88_w100_r1.jpg" src="" alt="USA-IRAN/TALKS" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/iran-us-close-to-deal-or-new-war-interview-hamidreza-azizi/33751979.html">
+<h4 class="media-block__title media-block__title--size-2" title="&#171;تفاهم کلی&#187; ایران و آمریکا؛ فرصت‌ها و چالش‌ها در گفت‌وگو با حمیدرضا عزیزی ">
+&#171;تفاهم کلی&#187; ایران و آمریکا؛ فرصت‌ها و چالش‌ها در گفت‌وگو با حمیدرضا عزیزی
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-61610_73" >
+<div class="row" id="wrowblock-61610_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-61610_50" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-58322_74" >
+<div class="row" id="wrowblock-58322_52" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-58322_53" >
+<div class="media-block-wrap" id="wrowblock-58322_55" data-area-id=R8_1>
+<h2 class="section-head">
+<a href="/BeyondTheNews"><span class="ico ico-chevron-forward pull-right flip"></span>گزارش و تحلیل</a> </h2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/paragraph-aval-iran-execution/33751085.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="پاراگراف اول؛ &#171;اعدام درمانی&#187; و فراگیر نشدن کارزار لغو این مجازات">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/b4083b20-d4ba-434c-48ca-08de3c91433d_cx0_cy3_cw0_w160_r1.jpg" alt="راهپیمایی ایرانیان در فرانسه علیه مجازات اعدام" />
+</noscript>
+<img data-src="https://gdb.rferl.org/b4083b20-d4ba-434c-48ca-08de3c91433d_cx0_cy3_cw0_w100_r1.jpg" src="" alt="راهپیمایی ایرانیان در فرانسه علیه مجازات اعدام" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/paragraph-aval-iran-execution/33751085.html">
+<h4 class="media-block__title media-block__title--size-2" title="پاراگراف اول؛ &#171;اعدام درمانی&#187; و فراگیر نشدن کارزار لغو این مجازات">
+پاراگراف اول؛ &#171;اعدام درمانی&#187; و فراگیر نشدن کارزار لغو این مجازات
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/breedlove-iran-crisis-exposes-a-west-more-divided-than-its-adversaries/33751172.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="بریدلاو: بحران ایران نشان داد غرب چندپاره‌تر از دشمنان خود است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/C09FFF9A-4FE7-4728-B18D-E73A93604F39_cx0_cy3_cw0_w160_r1.jpg" alt="فیلیپ بریدلاو، ژنرال بازنشستهٔ چهارستاره و فرمانده پیشین ناتو در اروپا" />
+</noscript>
+<img data-src="https://gdb.rferl.org/C09FFF9A-4FE7-4728-B18D-E73A93604F39_cx0_cy3_cw0_w100_r1.jpg" src="" alt="فیلیپ بریدلاو، ژنرال بازنشستهٔ چهارستاره و فرمانده پیشین ناتو در اروپا" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/breedlove-iran-crisis-exposes-a-west-more-divided-than-its-adversaries/33751172.html">
+<h4 class="media-block__title media-block__title--size-2" title="بریدلاو: بحران ایران نشان داد غرب چندپاره‌تر از دشمنان خود است">
+بریدلاو: بحران ایران نشان داد غرب چندپاره‌تر از دشمنان خود است
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-58322_54" >
+<div class="media-block-wrap" id="wrowblock-58322_56" data-area-id=R8_2>
+<h2 class="section-head">
+<a href="/p/4912.html"><span class="ico ico-chevron-forward pull-right flip"></span>گزیده‌هایی از رادیو آزادی</a> </h2>
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/armenia-passport-mount-ararat-conflict/33751802.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="ارمنستان و محو کردن کوه آرارات">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/c7d376ca-720a-49a6-1e70-08de3bed1b27_cx0_cy4_cw0_w160_r1.jpg" alt="صومعهٔ خُر ویراپ، با کوه آرارات در پس‌زمینهٔ آن، که در ترکی به نام &#171;آگری&#187; معروف است" />
+</noscript>
+<img data-src="https://gdb.rferl.org/c7d376ca-720a-49a6-1e70-08de3bed1b27_cx0_cy4_cw0_w100_r1.jpg" src="" alt="صومعهٔ خُر ویراپ، با کوه آرارات در پس‌زمینهٔ آن، که در ترکی به نام &#171;آگری&#187; معروف است" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/armenia-passport-mount-ararat-conflict/33751802.html">
+<h4 class="media-block__title media-block__title--size-2" title="ارمنستان و محو کردن کوه آرارات">
+ارمنستان و محو کردن کوه آرارات
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mb-grid">
+<div class="media-block ">
+<a href="/a/robert-murrett-a-us-vice-admiral-on-the-very-tough-challenge-of-hormuz/33751242.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/59fa9c80-d721-40f3-ae25-8e8416c4a9b1_cx0_cy10_cw0_w160_r1.jpg" alt="دو ناوچه آمریکایی در حال انجام مأموریت‌های دریایی" />
+</noscript>
+<img data-src="https://gdb.rferl.org/59fa9c80-d721-40f3-ae25-8e8416c4a9b1_cx0_cy10_cw0_w100_r1.jpg" src="" alt="دو ناوچه آمریکایی در حال انجام مأموریت‌های دریایی" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/robert-murrett-a-us-vice-admiral-on-the-very-tough-challenge-of-hormuz/33751242.html">
+<h4 class="media-block__title media-block__title--size-2" title="دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است">
+دریاسالار آمریکایی: امنیت تنگهٔ هرمز چالشی بسیار دشوار است
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fredContent" id="wrowblock-56323_42" >
+</div>
+<div class="container" id="wrowblock-55708_76" >
+<div class="row sm-clear-third" id="wrowblock-55708_64" >
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55708_65" >
+<div class="media-block-wrap" id="wrowblock-55708_69" data-area-id=R10_1>
+<h2 class="section-head">
+دانش و سلامت </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/trump-pentagon-release-secret-ufo-files/33752851.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/95f7fb54-7e76-4170-b5be-e48a9106c387_cx0_cy6_cw0_w160_r1.jpg" alt="یکی از تصاویر منتشر شده توسط وزارت دفاع آمریکا" />
+</noscript>
+<img data-src="https://gdb.rferl.org/95f7fb54-7e76-4170-b5be-e48a9106c387_cx0_cy6_cw0_w100_r1.jpg" src="" alt="یکی از تصاویر منتشر شده توسط وزارت دفاع آمریکا" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/trump-pentagon-release-secret-ufo-files/33752851.html">
+<h4 class="media-block__title media-block__title--size-2" title="دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد">
+دولت ترامپ پرونده‌های محرمانه &#171;یوفو&#187;ها را منتشر کرد
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/who-warns-of-more-hantavirus-cases-in-limited-outbreak/33752123.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/10e3747b-4b3e-472d-b843-fed1fa2e0a54_cx0_cy2_cw0_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/10e3747b-4b3e-472d-b843-fed1fa2e0a54_cx0_cy2_cw0_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/who-warns-of-more-hantavirus-cases-in-limited-outbreak/33752123.html">
+<h4 class="media-block__title media-block__title--size-4" title="سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود">
+سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/atmosphere-detected-on-celestial-body-in-solar-system-s-far-reaches/33751918.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="شناسایی جو در یک جرم آسمانی در دورترین منطقهٔ منظومهٔ شمسی">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/6e516afb-7038-41eb-8a7d-df68a5c01c05_cx0_cy7_cw0_w100_r1.jpg" alt="تصویری گرافیکی از جرم فرانپتونی موسوم به (612533) 2002 XV93 در حال عبور از مقابل یک ستاره در پس‌زمینه دور" />
+</noscript>
+<img data-src="https://gdb.rferl.org/6e516afb-7038-41eb-8a7d-df68a5c01c05_cx0_cy7_cw0_w33_r1.jpg" src="" alt="تصویری گرافیکی از جرم فرانپتونی موسوم به (612533) 2002 XV93 در حال عبور از مقابل یک ستاره در پس‌زمینه دور" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/atmosphere-detected-on-celestial-body-in-solar-system-s-far-reaches/33751918.html">
+<h4 class="media-block__title media-block__title--size-4" title="شناسایی جو در یک جرم آسمانی در دورترین منطقهٔ منظومهٔ شمسی">
+شناسایی جو در یک جرم آسمانی در دورترین منطقهٔ منظومهٔ شمسی
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/three-cruise-ship-passengers-die-in-suspected-hantavirus-outbreak/33749730.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="سه مسافر یک کشتی کروز در پی شیوع مشکوک ویروس &#171;هانتا&#187; جان باختند">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/883d9ba2-02b5-444f-8dfb-20d768290cc1_cx0_cy9_cw0_w100_r1.jpg" alt="نمای هوایی از کشتی کروز &#171;ام‌وی هوندیوس&#187; که روز ۱۴ اردیبهشت در نزدیکی بندر پرایا، پایتخت کیپ‌ورد، متوقف شده است" />
+</noscript>
+<img data-src="https://gdb.rferl.org/883d9ba2-02b5-444f-8dfb-20d768290cc1_cx0_cy9_cw0_w33_r1.jpg" src="" alt="نمای هوایی از کشتی کروز &#171;ام‌وی هوندیوس&#187; که روز ۱۴ اردیبهشت در نزدیکی بندر پرایا، پایتخت کیپ‌ورد، متوقف شده است" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/three-cruise-ship-passengers-die-in-suspected-hantavirus-outbreak/33749730.html">
+<h4 class="media-block__title media-block__title--size-4" title="سه مسافر یک کشتی کروز در پی شیوع مشکوک ویروس &#171;هانتا&#187; جان باختند">
+سه مسافر یک کشتی کروز در پی شیوع مشکوک ویروس &#171;هانتا&#187; جان باختند
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55708_66" >
+<div class="media-block-wrap" id="wrowblock-55708_70" data-area-id=R10_2>
+<h2 class="section-head">
+فرهنگ و هنر </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/us-ted-turner-cnn-founder-died/33751823.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="درگذشت تِد ترنر؛ مردی که با &#171;خبر ۲۴ ساعته&#187; صنعت رسانه را دگرگون کرد">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/e26be4fd-e22d-4ace-0767-08de3c642a38_w160_r1.jpg" alt="تد ترنر در سال ۲۰۰۰ در سازمان ملل" />
+</noscript>
+<img data-src="https://gdb.rferl.org/e26be4fd-e22d-4ace-0767-08de3c642a38_w100_r1.jpg" src="" alt="تد ترنر در سال ۲۰۰۰ در سازمان ملل" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/us-ted-turner-cnn-founder-died/33751823.html">
+<h4 class="media-block__title media-block__title--size-2" title="درگذشت تِد ترنر؛ مردی که با &#171;خبر ۲۴ ساعته&#187; صنعت رسانه را دگرگون کرد">
+درگذشت تِد ترنر؛ مردی که با &#171;خبر ۲۴ ساعته&#187; صنعت رسانه را دگرگون کرد
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33747685.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="استعفای دسته‌جمعی هیئت داوران دوسالانهٔ ونیز در پی مناقشه بر سر حضور روسیه و اسرائیل">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/37487d75-74c9-4ec1-1aca-08de3bed1b27_cx0_cy5_cw0_w100_r1.jpg" alt="یک اثر هنری ارائه‌شده در غرفه روسیه در پنجاه‌وششمین بینال ونیز در سال ۲۰۱۵
+" />
+</noscript>
+<img data-src="https://gdb.rferl.org/37487d75-74c9-4ec1-1aca-08de3bed1b27_cx0_cy5_cw0_w33_r1.jpg" src="" alt="یک اثر هنری ارائه‌شده در غرفه روسیه در پنجاه‌وششمین بینال ونیز در سال ۲۰۱۵
+" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33747685.html">
+<h4 class="media-block__title media-block__title--size-4" title="استعفای دسته‌جمعی هیئت داوران دوسالانهٔ ونیز در پی مناقشه بر سر حضور روسیه و اسرائیل">
+استعفای دسته‌جمعی هیئت داوران دوسالانهٔ ونیز در پی مناقشه بر سر حضور روسیه و اسرائیل
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/at-iranian-film-s-berlin-premiere-calls-not-to-forget-iranian-people/33746902.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="مهناز محمدی: مردم ایران خسته‌اند اما همچنان امیدوار به روزِ پس از جمهوری اسلامی">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/3021c594-cf5b-477c-8e68-690fd53db144_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/3021c594-cf5b-477c-8e68-690fd53db144_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/at-iranian-film-s-berlin-premiere-calls-not-to-forget-iranian-people/33746902.html">
+<h4 class="media-block__title media-block__title--size-4" title="مهناز محمدی: مردم ایران خسته‌اند اما همچنان امیدوار به روزِ پس از جمهوری اسلامی">
+مهناز محمدی: مردم ایران خسته‌اند اما همچنان امیدوار به روزِ پس از جمهوری اسلامی
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/paragraph-aval-iran-historic-monuments-war-damages/33735150.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="پاراگراف اول؛ جنگ و ورود میراث فرهنگی به میدان رقابت سیاسی ">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/bbea887f-c92b-4319-95b0-8d604bdbae64_w100_r1.jpg" alt="ساختمانی تاریخی در نزدیکی میدان نقش جهان اصفهان که در اثر حملات آمریکا و اسرائیل در جریان جنگ ۴۰ روزه، آسیب زیادی دید" />
+</noscript>
+<img data-src="https://gdb.rferl.org/bbea887f-c92b-4319-95b0-8d604bdbae64_w33_r1.jpg" src="" alt="ساختمانی تاریخی در نزدیکی میدان نقش جهان اصفهان که در اثر حملات آمریکا و اسرائیل در جریان جنگ ۴۰ روزه، آسیب زیادی دید" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/paragraph-aval-iran-historic-monuments-war-damages/33735150.html">
+<h4 class="media-block__title media-block__title--size-4" title="پاراگراف اول؛ جنگ و ورود میراث فرهنگی به میدان رقابت سیاسی ">
+پاراگراف اول؛ جنگ و ورود میراث فرهنگی به میدان رقابت سیاسی
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55708_67" >
+<div class="media-block-wrap" id="wrowblock-55708_71" data-area-id=R10_3>
+<h2 class="section-head">
+<a href="/Economy"><span class="ico ico-chevron-forward pull-right flip"></span>اقتصاد</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/cost-of-renting-in-iran-after-war/33752104.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/b657c980-f8ab-4530-8153-3bf3c106635e_cx0_cy5_cw0_w160_r1.jpg" alt="یک ساختمان مسکونی ویران‌شده در تهران بر اثر حمله هوایی" />
+</noscript>
+<img data-src="https://gdb.rferl.org/b657c980-f8ab-4530-8153-3bf3c106635e_cx0_cy5_cw0_w100_r1.jpg" src="" alt="یک ساختمان مسکونی ویران‌شده در تهران بر اثر حمله هوایی" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/cost-of-renting-in-iran-after-war/33752104.html">
+<h4 class="media-block__title media-block__title--size-2" title="افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟">
+افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33751763.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="بهای سبد کالاهای خوراکی به ۳.۸ میلیون تومان رسید؛ رقم کالابرگ ثابت ماند">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/e644d024-98b1-4fd6-bb60-84901271a381_cx1_cy0_cw96_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/e644d024-98b1-4fd6-bb60-84901271a381_cx1_cy0_cw96_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33751763.html">
+<h4 class="media-block__title media-block__title--size-4" title="بهای سبد کالاهای خوراکی به ۳.۸ میلیون تومان رسید؛ رقم کالابرگ ثابت ماند">
+بهای سبد کالاهای خوراکی به ۳.۸ میلیون تومان رسید؛ رقم کالابرگ ثابت ماند
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33747672.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="کاهش تولید نفت ایران در پی محاصرهٔ دریایی چه پیامدهایی دارد؟ ">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/e4993342-09e6-42e4-da9c-08de3c914337_w100_r1.jpg" alt="یک سکوی نفتی ایران در خلیج فارس" />
+</noscript>
+<img data-src="https://gdb.rferl.org/e4993342-09e6-42e4-da9c-08de3c914337_w33_r1.jpg" src="" alt="یک سکوی نفتی ایران در خلیج فارس" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33747672.html">
+<h4 class="media-block__title media-block__title--size-4" title="کاهش تولید نفت ایران در پی محاصرهٔ دریایی چه پیامدهایی دارد؟ ">
+کاهش تولید نفت ایران در پی محاصرهٔ دریایی چه پیامدهایی دارد؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/one-of-iran-s-most-powerful-families-founded-its-largest-crypto-exchange-it-s-used-by-the-irgc-to-move-millions/33747601.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="نوبیتِکس، خانواده نزدیک به حکومت ایران و شبکه‌ای که لو رفت">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/64b9a1c2-839d-4a1b-acde-08dda7e35554_cx0_cy6_cw0_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/64b9a1c2-839d-4a1b-acde-08dda7e35554_cx0_cy6_cw0_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/one-of-iran-s-most-powerful-families-founded-its-largest-crypto-exchange-it-s-used-by-the-irgc-to-move-millions/33747601.html">
+<h4 class="media-block__title media-block__title--size-4" title="نوبیتِکس، خانواده نزدیک به حکومت ایران و شبکه‌ای که لو رفت">
+نوبیتِکس، خانواده نزدیک به حکومت ایران و شبکه‌ای که لو رفت
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55708_68" >
+<div class="media-block-wrap" id="wrowblock-55708_72" data-area-id=R10_4>
+<h2 class="section-head">
+پرخواننده‌ترین‌ها </h2>
+<div class="row trends-wg">
+<a href="/a/iran-us-war-liveblog/33647192.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۱</span>
+<h4 class="trends-wg__item-txt">
+<span class="ico ico-liveblog trends-wg__ico m-r-xs"></span>
+&#171;احتمال نشت نفت&#187; در نزدیکی خارگ؛ جلوگیری از جابه‌جایی میلیاردها دلار نفت ایران
+</h4>
+</span>
+</a>
+<a href="/a/armenia-passport-mount-ararat-conflict/33751802.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۲</span>
+<h4 class="trends-wg__item-txt">
+ارمنستان و محو کردن کوه آرارات
+</h4>
+</span>
+</a>
+<a href="/a/cost-of-renting-in-iran-after-war/33752104.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۳</span>
+<h4 class="trends-wg__item-txt">
+افزایش اجاره‌ها در پی جنگ چگونه سبک زندگی را تغییر می‌دهد؟
+</h4>
+</span>
+</a>
+<a href="/a/us-ted-turner-cnn-founder-died/33751823.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۴</span>
+<h4 class="trends-wg__item-txt">
+درگذشت تِد ترنر؛ مردی که با &#171;خبر ۲۴ ساعته&#187; صنعت رسانه را دگرگون کرد
+</h4>
+</span>
+</a>
+<a href="/a/atmosphere-detected-on-celestial-body-in-solar-system-s-far-reaches/33751918.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۵</span>
+<h4 class="trends-wg__item-txt">
+شناسایی جو در یک جرم آسمانی در دورترین منطقهٔ منظومهٔ شمسی
+</h4>
+</span>
+</a>
+<a href="/a/who-warns-of-more-hantavirus-cases-in-limited-outbreak/33752123.html" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 trends-wg__item mb-grid">
+<span class="trends-wg__item-inner">
+<span class="trends-wg__item-number">۶</span>
+<h4 class="trends-wg__item-txt">
+سازمان بهداشت جهانی اعلام کرد شیوع ویروس &#171;هانتا&#187; می‌تواند محدود شود
+</h4>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-57054_73" >
+<div class="row" id="wrowblock-57054_49" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-4c" id="wrowblock-57054_50" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-55373_76" >
+<div class="row sm-clear-third" id="wrowblock-55373_64" >
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55373_65" >
+<div class="media-block-wrap" id="wrowblock-55373_69" data-area-id=R12_1>
+<h2 class="section-head">
+<a href="https://www.radiofarda.com/radio-programs"><span class="ico ico-chevron-forward pull-right flip"></span>برنامه‌های رادیویی</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/33749224.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="ایستگاه ۱۹
+">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-c0a8-0242-2008-08dcb23a1b2b_w160_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-c0a8-0242-2008-08dcb23a1b2b_w100_r1.jpg" src="" alt="" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/33749224.html">
+<h4 class="media-block__title media-block__title--size-2" title="ایستگاه ۱۹
+">
+ایستگاه ۱۹
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33749223.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="کافه فردا">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/f9ffef5b-c844-4b07-1eff-08de3bed1b27_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/f9ffef5b-c844-4b07-1eff-08de3bed1b27_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33749223.html">
+<h4 class="media-block__title media-block__title--size-4" title="کافه فردا">
+کافه فردا
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33749217.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="ساعت ۱۴
+">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-c0a8-0242-573b-08dcb24c003e_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-c0a8-0242-573b-08dcb24c003e_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33749217.html">
+<h4 class="media-block__title media-block__title--size-4" title="ساعت ۱۴
+">
+ساعت ۱۴
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33749184.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="ایستگاه ۱۹
+">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/01000000-c0a8-0242-2008-08dcb23a1b2b_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/01000000-c0a8-0242-2008-08dcb23a1b2b_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+<span class="ico ico-audio ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33749184.html">
+<h4 class="media-block__title media-block__title--size-4" title="ایستگاه ۱۹
+">
+ایستگاه ۱۹
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33644714.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="راه‌اندازی مجدد امواج کوتاه برای شنیدن صدای رادیو فردا در ایران">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/5a0407ac-2a48-4364-980b-08dda7e3555c_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/5a0407ac-2a48-4364-980b-08dda7e3555c_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33644714.html">
+<h4 class="media-block__title media-block__title--size-4" title="راه‌اندازی مجدد امواج کوتاه برای شنیدن صدای رادیو فردا در ایران">
+راه‌اندازی مجدد امواج کوتاه برای شنیدن صدای رادیو فردا در ایران
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55373_66" >
+<div class="media-block-wrap" id="wrowblock-55373_70" data-area-id=R12_2>
+<h2 class="section-head">
+<a href="/environment"><span class="ico ico-chevron-forward pull-right flip"></span>محیط زیست</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/iran-tehran-raining-oil-in-capital-after-oil-depots-hit-by-israel/33698771.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="بارش &#171;باران نفت&#187; و تیرگی آسمانِ تهران پس از بمباران تأسیسات نفتی؛ &#171;مردم ماسک بزنند&#187;">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/3178023f-40ed-4d7c-cd1e-08de3c914337_cx0_cy14_cw0_w160_r1.jpg" alt="عکسی که به گفته یک کاربر توییتر در حدود ساعت ۹ صبح روز یک‌شنبه گرفته شده است" />
+</noscript>
+<img data-src="https://gdb.rferl.org/3178023f-40ed-4d7c-cd1e-08de3c914337_cx0_cy14_cw0_w100_r1.jpg" src="" alt="عکسی که به گفته یک کاربر توییتر در حدود ساعت ۹ صبح روز یک‌شنبه گرفته شده است" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/iran-tehran-raining-oil-in-capital-after-oil-depots-hit-by-israel/33698771.html">
+<h4 class="media-block__title media-block__title--size-2" title="بارش &#171;باران نفت&#187; و تیرگی آسمانِ تهران پس از بمباران تأسیسات نفتی؛ &#171;مردم ماسک بزنند&#187;">
+بارش &#171;باران نفت&#187; و تیرگی آسمانِ تهران پس از بمباران تأسیسات نفتی؛ &#171;مردم ماسک بزنند&#187;
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33671083.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="بارندگی در ایران بیش از پارسال بوده، اما هنوز ۶۴ درصد مخازن سدها خالی است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/d0046db3-dc01-4157-8d2b-08ddfa9117a6_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/d0046db3-dc01-4157-8d2b-08ddfa9117a6_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33671083.html">
+<h4 class="media-block__title media-block__title--size-4" title="بارندگی در ایران بیش از پارسال بوده، اما هنوز ۶۴ درصد مخازن سدها خالی است">
+بارندگی در ایران بیش از پارسال بوده، اما هنوز ۶۴ درصد مخازن سدها خالی است
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33628777.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="سازمان هواشناسی: بارش‌ها چشمگیر بود، اما نتوانست کم‌بارشی پاییز را جبران کند">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/1e63b7a4-1e1d-48c4-fd53-08de3bed1b26_w100_r1.jpg" alt="بارش برف در اصفهان، پنجشنبه ۲۷ آذر" />
+</noscript>
+<img data-src="https://gdb.rferl.org/1e63b7a4-1e1d-48c4-fd53-08de3bed1b26_w33_r1.jpg" src="" alt="بارش برف در اصفهان، پنجشنبه ۲۷ آذر" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33628777.html">
+<h4 class="media-block__title media-block__title--size-4" title="سازمان هواشناسی: بارش‌ها چشمگیر بود، اما نتوانست کم‌بارشی پاییز را جبران کند">
+سازمان هواشناسی: بارش‌ها چشمگیر بود، اما نتوانست کم‌بارشی پاییز را جبران کند
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33621741.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title=" رئیس مرکز ملی اقلیم: بارورسازی ابرها بی‌تأثیر و اهمیت دادن به آن غیرعادی است">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/88367f2c-6abc-4247-a26c-08de2bf6eb80_cx0_cy7_cw0_w100_r1.png" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/88367f2c-6abc-4247-a26c-08de2bf6eb80_cx0_cy7_cw0_w33_r1.png" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33621741.html">
+<h4 class="media-block__title media-block__title--size-4" title=" رئیس مرکز ملی اقلیم: بارورسازی ابرها بی‌تأثیر و اهمیت دادن به آن غیرعادی است">
+رئیس مرکز ملی اقلیم: بارورسازی ابرها بی‌تأثیر و اهمیت دادن به آن غیرعادی است
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55373_67" >
+<div class="media-block-wrap" id="wrowblock-55373_71" data-area-id=R12_3>
+<h2 class="section-head">
+<a href="/photogalleries"><span class="ico ico-chevron-forward pull-right flip"></span>در قاب تصویر</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/iran-us-israel-war-week-three-photos/33712319.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="گزارش تصویری: هفتهٔ سوم جنگ با ایران">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/3202b702-30cb-4507-36a7-08de3be37656_cx0_cy9_cw0_w160_r1.jpg" alt="Israel -- Israeli security personnel secure an area around a rocket " />
+</noscript>
+<img data-src="https://gdb.rferl.org/3202b702-30cb-4507-36a7-08de3be37656_cx0_cy9_cw0_w100_r1.jpg" src="" alt="Israel -- Israeli security personnel secure an area around a rocket " class=""/>
+</div>
+<span class="ico ico-gallery ico--media-type"></span>
+</a>
+<div class="media-block__content">
+<a href="/a/iran-us-israel-war-week-three-photos/33712319.html">
+<h4 class="media-block__title media-block__title--size-2" title="گزارش تصویری: هفتهٔ سوم جنگ با ایران">
+گزارش تصویری: هفتهٔ سوم جنگ با ایران
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/photo-gallery-khamenei-death-joy-sorrow/33691104.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="گزارش تصویری؛ شادی و عزا در مرگ خامنه‌ای">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/bfa87600-08b8-47fb-bf9f-7c9db395e3f2_w100_r1.jpg" alt="تجمع ایرانیان در سیدنی استرالیا؛ شرکت‌کنندگان با پلاکارد و پرچم شعار می‌دهند." />
+</noscript>
+<img data-src="https://gdb.rferl.org/bfa87600-08b8-47fb-bf9f-7c9db395e3f2_w33_r1.jpg" src="" alt="تجمع ایرانیان در سیدنی استرالیا؛ شرکت‌کنندگان با پلاکارد و پرچم شعار می‌دهند." class=""/>
+</div>
+<span class="ico ico-gallery ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/photo-gallery-khamenei-death-joy-sorrow/33691104.html">
+<h4 class="media-block__title media-block__title--size-4" title="گزارش تصویری؛ شادی و عزا در مرگ خامنه‌ای">
+گزارش تصویری؛ شادی و عزا در مرگ خامنه‌ای
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/iran-us-israel-attacks/33690338.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="گزارش تصویری از حملات آمریکا و اسرائیل به ایران">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/a298fe86-a036-41c9-b1fe-735e7e95a63a_cx0_cy67_cw100_w100_r1.jpg" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/a298fe86-a036-41c9-b1fe-735e7e95a63a_cx0_cy67_cw100_w33_r1.jpg" src="" alt="" class=""/>
+</div>
+<span class="ico ico-gallery ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/iran-us-israel-attacks/33690338.html">
+<h4 class="media-block__title media-block__title--size-4" title="گزارش تصویری از حملات آمریکا و اسرائیل به ایران">
+گزارش تصویری از حملات آمریکا و اسرائیل به ایران
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/iran-us-military-buildup-tensions/33688585.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title=" آرایش تجهیزات نظامی آمریکا پیش از آغاز جنگ با ایران">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/0c1241f9-99bb-4b2a-c995-08de3c914337_cx0_cy2_cw97_w100_r1.jpg" alt="Portugal -- Cattle graze in front of a row of some fifteen US Airforce KC-46 Pegasus tankers " />
+</noscript>
+<img data-src="https://gdb.rferl.org/0c1241f9-99bb-4b2a-c995-08de3c914337_cx0_cy2_cw97_w33_r1.jpg" src="" alt="Portugal -- Cattle graze in front of a row of some fifteen US Airforce KC-46 Pegasus tankers " class=""/>
+</div>
+<span class="ico ico-gallery ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/iran-us-military-buildup-tensions/33688585.html">
+<h4 class="media-block__title media-block__title--size-4" title=" آرایش تجهیزات نظامی آمریکا پیش از آغاز جنگ با ایران">
+آرایش تجهیزات نظامی آمریکا پیش از آغاز جنگ با ایران
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/ukraine-war-kyiv-murals-russia-invasion-art/33687083.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="هنر جنگ: دیوارنگاره‌های جنگی کی‌یف
+">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/88b0afa1-15da-4583-3bcb-08de3c92853e_w100_r1.jpg" alt="دیوارنگاره‌ای اثر ساشا کوربان، که دستان سربازی در حال ترمیم پارگی یک پرچم اوکراین را تداعی می‌کند. این اثر در فروردین‌ ۱۴۰۱، حدود یک‌ماه پس از آغاز تهاجم تمام‌عیار روسیه و همزمان با نبرد در شهرهای بوچا و ایرپین خلق شد.&lt;br&gt;&lt;br&gt;" />
+</noscript>
+<img data-src="https://gdb.rferl.org/88b0afa1-15da-4583-3bcb-08de3c92853e_w33_r1.jpg" src="" alt="دیوارنگاره‌ای اثر ساشا کوربان، که دستان سربازی در حال ترمیم پارگی یک پرچم اوکراین را تداعی می‌کند. این اثر در فروردین‌ ۱۴۰۱، حدود یک‌ماه پس از آغاز تهاجم تمام‌عیار روسیه و همزمان با نبرد در شهرهای بوچا و ایرپین خلق شد.&lt;br&gt;&lt;br&gt;" class=""/>
+</div>
+<span class="ico ico-gallery ico--media-type"></span>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/ukraine-war-kyiv-murals-russia-invasion-art/33687083.html">
+<h4 class="media-block__title media-block__title--size-4" title="هنر جنگ: دیوارنگاره‌های جنگی کی‌یف
+">
+هنر جنگ: دیوارنگاره‌های جنگی کی‌یف
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-55373_68" >
+<div class="media-block-wrap" id="wrowblock-55373_72" data-area-id=R12_4>
+<h2 class="section-head">
+<a href="/BeyondTheNews"><span class="ico ico-chevron-forward pull-right flip"></span>گزارش و تحلیل</a> </h2>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="media-block ">
+<a href="/a/from-pain-to-hope-story-israeli-palestinian-gaza/33750991.html" class="img-wrap img-wrap--t-spac img-wrap--size-2" title="از &#171;درد&#187; تا &#171;امید&#187;؛ داستان دو دشمن که با هم کتاب صلح نوشتند">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/2af49da3-be88-4b2c-8162-e9205a190d24_w160_r1.jpg" alt="تظاهرات چپگرایان ضد دولت اسرائیل در تل آویو. روی پلاکاردی در دست تظاهرکنندگان نوشته شده که &#171;چقدر خون باید ریخته شود؟&#187;" />
+</noscript>
+<img data-src="https://gdb.rferl.org/2af49da3-be88-4b2c-8162-e9205a190d24_w100_r1.jpg" src="" alt="تظاهرات چپگرایان ضد دولت اسرائیل در تل آویو. روی پلاکاردی در دست تظاهرکنندگان نوشته شده که &#171;چقدر خون باید ریخته شود؟&#187;" class=""/>
+</div>
+</a>
+<div class="media-block__content">
+<a href="/a/from-pain-to-hope-story-israeli-palestinian-gaza/33750991.html">
+<h4 class="media-block__title media-block__title--size-2" title="از &#171;درد&#187; تا &#171;امید&#187;؛ داستان دو دشمن که با هم کتاب صلح نوشتند">
+از &#171;درد&#187; تا &#171;امید&#187;؛ داستان دو دشمن که با هم کتاب صلح نوشتند
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid">
+<div class="row">
+<ul>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33748754.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="جنگ ایران چگونه &#171;شاهین‌ها&#187; را از &#171;کبوترها&#187; جدا کرد؟">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/7988aa23-df8e-40e7-ac02-5dc0cc32d500_cx0_cy9_cw0_w100_r1.jpg" alt="نمایی از شهر دوبی در امارات متحده عربی" />
+</noscript>
+<img data-src="https://gdb.rferl.org/7988aa23-df8e-40e7-ac02-5dc0cc32d500_cx0_cy9_cw0_w33_r1.jpg" src="" alt="نمایی از شهر دوبی در امارات متحده عربی" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33748754.html">
+<h4 class="media-block__title media-block__title--size-4" title="جنگ ایران چگونه &#171;شاهین‌ها&#187; را از &#171;کبوترها&#187; جدا کرد؟">
+جنگ ایران چگونه &#171;شاهین‌ها&#187; را از &#171;کبوترها&#187; جدا کرد؟
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/max-meizlish-inside-mojtaba-khamenei-s-global-kleptocracy-/33748545.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="مجتبی خامنه‌ای و &#171;دزدسالاری موروثی&#187; در جمهوری اسلامی">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/71e13bcb-b985-46ea-1dc5-08de3bed1b27_w100_r1.jpg" alt="مکس مایزلیش، پژوهشگر فعال در حوزه سیاست تحریم‌ها در بنیاد دفاع از دموکراسی‌ها" />
+</noscript>
+<img data-src="https://gdb.rferl.org/71e13bcb-b985-46ea-1dc5-08de3bed1b27_w33_r1.jpg" src="" alt="مکس مایزلیش، پژوهشگر فعال در حوزه سیاست تحریم‌ها در بنیاد دفاع از دموکراسی‌ها" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/max-meizlish-inside-mojtaba-khamenei-s-global-kleptocracy-/33748545.html">
+<h4 class="media-block__title media-block__title--size-4" title="مجتبی خامنه‌ای و &#171;دزدسالاری موروثی&#187; در جمهوری اسلامی">
+مجتبی خامنه‌ای و &#171;دزدسالاری موروثی&#187; در جمهوری اسلامی
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33747597.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="پاراگراف اول؛ توجیه &#171;تاب‌آوری&#187; با &#171;جنگ و رنج&#187; در جمهوری اسلامی">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/a26b05ee-6ec3-45d3-4aa3-08de3c91433d_w100_r1.jpg" alt="طرحی با الهام از حرکت اعتراضی ایرانیان که با عنوان نمادین &#171;رقص مرگ&#187; نامیده شده است" />
+</noscript>
+<img data-src="https://gdb.rferl.org/a26b05ee-6ec3-45d3-4aa3-08de3c91433d_w33_r1.jpg" src="" alt="طرحی با الهام از حرکت اعتراضی ایرانیان که با عنوان نمادین &#171;رقص مرگ&#187; نامیده شده است" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33747597.html">
+<h4 class="media-block__title media-block__title--size-4" title="پاراگراف اول؛ توجیه &#171;تاب‌آوری&#187; با &#171;جنگ و رنج&#187; در جمهوری اسلامی">
+پاراگراف اول؛ توجیه &#171;تاب‌آوری&#187; با &#171;جنگ و رنج&#187; در جمهوری اسلامی
+</h4>
+</a>
+</div>
+</div>
+</li>
+<li class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner">
+<div class="media-block ">
+<a href="/a/33690547.html" class="img-wrap img-wrap--t-spac img-wrap--size-4 img-wrap--float" title="فرکانس ماهواره‌ای جدید رادیو فردا">
+<div class="thumb thumb16_9">
+<noscript class="nojs-img">
+<img src="https://gdb.rferl.org/f6e67e11-92aa-4dc3-f68e-08de3c642a37_w100_r1.png" alt="" />
+</noscript>
+<img data-src="https://gdb.rferl.org/f6e67e11-92aa-4dc3-f68e-08de3c642a37_w33_r1.png" src="" alt="" class=""/>
+</div>
+</a>
+<div class="media-block__content media-block__content--h">
+<a href="/a/33690547.html">
+<h4 class="media-block__title media-block__title--size-4" title="فرکانس ماهواره‌ای جدید رادیو فردا">
+فرکانس ماهواره‌ای جدید رادیو فردا
+</h4>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-24499_122" >
+<div class="row" id="wrowblock-24499_123" >
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" id="wrowblock-24499_124" >
+<div class="row" id="wrowblock-24499_126" >
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 wg-area-2c" id="wrowblock-24499_127" >
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wg-area-1c" id="wrowblock-24499_128" >
+</div>
+</div>
+<div class="row" id="wrowblock-24499_129" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wg-area-3c" id="wrowblock-24499_130" >
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-24499_125" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-20717_135" >
+<div class="row" id="wrowblock-20717_136" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-2c" id="wrowblock-20717_137" >
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-20717_138" >
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wg-area-1c" id="wrowblock-20717_139" >
+</div>
+</div>
+</div>
+<div class="container" id="wrowblock-14511_22" >
+<div class="row" id="wrowblock-14511_23" >
+<div class="col-xs-12 col-md-8 col-lg-8" id="wrowblock-14511_24" >
+<div class="row" id="wrowblock-14511_28" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-1c" id="wrowblock-14511_30" >
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-1c" id="wrowblock-14511_31" >
+</div>
+</div>
+<div class="row" id="wrowblock-14511_29" >
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-1c" id="wrowblock-14511_32" >
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 wg-area-1c" id="wrowblock-14511_33" >
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wg-area-1c" id="wrowblock-14511_25" >
+</div>
+</div>
+</div>
+</div>
+<footer role="contentinfo">
+<div id="foot" class="foot">
+<div class="container">
+<div class="foot-nav collapsed" id="foot-nav">
+<div class="menu">
+<ul class="items">
+<li class="socials block-socials">
+<span class="handler" id="socials-handler">
+به ما بپیوندید
+</span>
+<div class="inner">
+<ul class="subitems follow">
+<li>
+<a href="/podcasts" title="پادکست" data-analytics-text="follow_on_podcast" class="btn btn--rounded js-social-btn btn-podcast" >
+<span class="ico ico-podcast ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="/rssfeeds" title="RSS" data-analytics-text="follow_on_rss" class="btn btn--rounded js-social-btn btn-rss" >
+<span class="ico ico-rss ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/radio.farda" title="در فیس‌بوک به ما بپیوندید" data-analytics-text="follow_on_facebook" class="btn btn--rounded js-social-btn btn-facebook" target="_blank" rel="noopener">
+<span class="ico ico-facebook-alt ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://telegram.me/radiofarda" title="در تلگرام به ما بپیوندید" data-analytics-text="follow_on_telegram" class="btn btn--rounded js-social-btn btn-telegram" target="_blank" rel="noopener">
+<span class="ico ico-telegram ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/radiofarda_" title="در ایکس به ما بپیوندید" data-analytics-text="follow_on_twitter" class="btn btn--rounded js-social-btn btn-twitter" target="_blank" rel="noopener">
+<span class="ico ico-twitter ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/TheRadiofarda" title="در یوتیوب ما را دنبال کنید" data-analytics-text="follow_on_youtube" class="btn btn--rounded js-social-btn btn-youtube" target="_blank" rel="noopener">
+<span class="ico ico-youtube ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://soundcloud.com/radio-farda" title="در ساوندکلاود دنبال کنید" data-analytics-text="follow_on_soundcloud" class="btn btn--rounded js-social-btn btn-soundcloud" target="_blank" rel="noopener">
+<span class="ico ico-soundcloud ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://instagram.com/radiofarda/" title="در اینستاگرام دنبال کنید" data-analytics-text="follow_on_instagram" class="btn btn--rounded js-social-btn btn-instagram" target="_blank" rel="noopener">
+<span class="ico ico-instagram ico--rounded"></span>
+</a>
+</li>
+<li>
+<a href="https://www.threads.net/@radiofarda" title="در تردز به ما بپیوندید" data-analytics-text="follow_on_threads" class="btn btn--rounded js-social-btn btn-threads" target="_blank" rel="noopener">
+<span class="ico ico-threads ico--rounded"></span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="block-primary collapsed collapsible item">
+<span class="handler">
+رادیو فردا
+<span title="close tab" class="ico ico-chevron-up"></span>
+<span title="open tab" class="ico ico-chevron-down"></span>
+<span title="add" class="ico ico-plus"></span>
+<span title="remove" class="ico ico-minus"></span>
+</span>
+<div class="inner">
+<ul class="subitems">
+<li class="subitem">
+<a class="handler" href="https://www.radiofarda.com/" title="صفحه اصلی" >صفحه اصلی</a>
+</li>
+<li class="subitem">
+<a class="handler" href="/iran" title="ایران" >ایران</a>
+</li>
+<li class="subitem">
+<a class="handler" href="/world" title="جهان" >جهان</a>
+</li>
+<li class="subitem">
+<a class="handler" href="/farda-podcasts" title="پادکست" >پادکست</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="block-primary collapsed collapsible item">
+<span class="handler">
+درباره
+<span title="close tab" class="ico ico-chevron-up"></span>
+<span title="open tab" class="ico ico-chevron-down"></span>
+<span title="add" class="ico ico-plus"></span>
+<span title="remove" class="ico ico-minus"></span>
+</span>
+<div class="inner">
+<ul class="subitems">
+<li class="subitem">
+<a class="handler" href="/about" title="درباره ما" >درباره ما</a>
+</li>
+<li class="subitem">
+<a class="handler" href="/schedule/radio.html#live-now" title="انتخاب کنید و بشنوید" >انتخاب کنید و بشنوید</a>
+</li>
+<li class="subitem">
+<a class="handler" href="/vpns" title="فیلترشکن‌ها" >فیلترشکن‌ها</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="foot__item foot__item--copyrights">
+<p class="copyright">© ۲۰۲۶ تمام حقوق این وب‌سایت، بر اساس مقررات کپی‌رایت، برای رادیو فردا محفوظ است.</p>
+</div>
+</div>
+</div>
+</footer> </div>
+</div>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+if (!isPreviewPage) {
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+OneSignalDeferred.push(function(OneSignal) {
+OneSignal.init({
+appId: "31440623-659c-40af-835a-144b95040012",
+});
+});
+}
+</script> <script defer src="/Scripts/responsive/serviceWorkerInstall.js?cb=382"></script>
+<script type="text/javascript">
+// opera mini - disable ico font
+if (navigator.userAgent.match(/Opera Mini/i)) {
+document.getElementsByTagName("body")[0].className += " can-not-ff";
+}
+// mobile browsers test
+if (typeof RFE !== 'undefined' && RFE.isMobile) {
+if (RFE.isMobile.any()) {
+document.getElementsByTagName("body")[0].className += " is-mobile";
+}
+else {
+document.getElementsByTagName("body")[0].className += " is-not-mobile";
+}
+}
+</script>
+<script src="/conf.js?x=382" type="text/javascript"></script>
+<div class="responsive-indicator">
+<div class="visible-xs-block">XS</div>
+<div class="visible-sm-block">SM</div>
+<div class="visible-md-block">MD</div>
+<div class="visible-lg-block">LG</div>
+</div>
+<script type="text/javascript">
+var bar_data = {
+"apiId": "2831",
+"apiType": "2",
+"isEmbedded": "0",
+"culture": "fa-IR",
+"cookieName": "cmsLoggedIn",
+"cookieDomain": "www.radiofarda.com"
+};
+</script>
+<div id="scriptLoaderTarget" style="display:none;contain:strict;"></div>
+</body>
+</html>
